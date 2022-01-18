@@ -2,6 +2,9 @@ body {
   background-color: #352f5b;
   color: white;
 }
+span {
+  color: white;
+}
 .container {
   max-width: 400px;
 }
@@ -20,4 +23,10 @@ input[type="text"]:focus {
 }
 .filtered {
   display: none;
+}
+.delete {
+  color: white;
+}
+.filtered {
+  display: none !important;
 }

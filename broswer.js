@@ -19,7 +19,7 @@ const filterTodos = (word) => {
       return !item.textContent.toLowerCase().includes(word);
     })
     .forEach((item) => {
-      item.classList.add("filtered");
+      return item.classList.add("filtered");
     });
 
   // reverse
@@ -28,7 +28,7 @@ const filterTodos = (word) => {
       return item.textContent.toLowerCase().includes(word);
     })
     .forEach((item) => {
-      item.classList.remove("filtered");
+      return item.classList.remove("filtered");
     });
 };
 
@@ -51,7 +51,7 @@ list.addEventListener("click", (e) => {
 });
 
 // search Todos.
-search.addEventListener("keyUp", (e) => {
+search.addEventListener("keyup", (e) => {
   const searchWord = search.value.trim().toLowerCase();
   filterTodos(searchWord);
 });
